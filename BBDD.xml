@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE baseDatos[
+<!ELEMENT baseDatos (datos)>
+<!ELEMENT datos (usuarios)>
+<!ELEMENT usuarios (usuario*)>
+<!ELEMENT usuario (dni, nombre, apellido, email, direccion, nomUsuario, contraseña)>
+<!ELEMENT dni (#PCDATA)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT apellido (#PCDATA)>
+ <!ELEMENT email (#PCDATA)>
+ <!ELEMENT direccion (#PCDATA)>
+ <!ELEMENT nomUsuario (#PCDATA)>
+ <!ELEMENT contraseña (#PCDATA)>
+]>
+<baseDatos>
+<datos>
+<usuarios>
+<usuario>
+<dni>22222222D</dni>
+<nombre>Maria</nombre>
+<apellido>Rodriguez</apellido>
+<email>maria@gmail.com</email>
+<direccion>C/Murillo 17</direccion>
+<nomUsuario>mariaRD17</nomUsuario>
+<contraseña>mariaRD17</contraseña>
+</usuario>
+<usuario>
+<dni>66666666G</dni>
+<nombre>Pedro</nombre>
+<apellido>Muñoz</apellido>
+<email>pedro@gmail.com</email>
+<direccion>C/Europa 19</direccion>
+<nomUsuario>pedroMG19</nomUsuario>
+<contraseña>pedroMG19</contraseña>
+</usuario>
+</usuarios>
+</datos>
+</baseDatos>

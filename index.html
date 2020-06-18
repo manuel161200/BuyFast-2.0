@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>buyfast</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/IndexEstilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body >
+        <!-- Cabecera -->
+        <div class="container-fluid p-0" id="cabecera">
+            <div class="row">
+                <div class="col-md-4">
+                    <img  id="logo" src="img/logo.png" alt="logo">
+                </div>
+                <div class="col-md-8">
+                    <h3 id="titulo">BUYFAST</h3>
+                </div>
+            </div>
+        
+        <!-- Menu -->
+            <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+                <a class="navbar-brand" href="#">Menú</a>
+                <ul class="navbar-nav">
+                <li class="nav-item" style="margin-left: 40px;">
+                    <a class="nav-link" href="#" id="login">Iniciar sesión</a>
+                </li>
+                <li class="nav-item" style="margin-left: 40px;">
+                    <a class="nav-link" href="#" id="registro">Registro</a>
+                </li>
+                </ul>
+            </nav>   
+        <!-- Formulario -->
+            <p id="texto1" class="text-center font-weight-bold mt-5"></p>
+            <div class="row  mx-auto mt-5 shadow" id="form" style="width: 60%;">
+                <div class="col-12">
+                    <form class="container pt-5 w-50" name="formulario" id="formulario" onsubmit="enviar();return false">
+                        <div class="form-group row oculto" id="dni">
+                            <label for="DNI" class="col-4">DNI: </label>
+                            <div class="col-8">
+                                <input type="text" class="form-control form" id="dni" placeholder="Introduzca su DNI:" name="DNI:" >
+                            </div>
+                        </div>
+                        <div class="form-group row oculto" id="nombre">
+                            <label for="nombre" class="col-4">Nombre: </label>
+                            <div class="col-8">
+                                <input type="text" class="form-control form" id="nombre" placeholder="Introduzca su nombre" name="nombre" >
+                            </div>
+                        </div>
+                        <div class="form-group row oculto" id="apellidos">
+                            <label for="apellidos" class="col-4">Apellidos: </label>
+                            <div class="col-8">
+                                <input type="text" class="form-control form" id="apellidos" placeholder="Introduzca sus apellidos:" name="apellidos" >
+                            </div>
+                        </div>
+                        <div class="form-group row oculto" id="gmail">
+                            <label for="gmail" class="col-4">Email: </label>
+                            <div class="col-8">
+                                <input type="email" class="form-control form" id="gmail" placeholder="Introduzca su email:" name="gmail" >
+                            </div>
+                        </div>
+                        <div class="form-group row oculto" id="direccion">
+                            <label for="direccion" class="col-4">Direccion: </label>
+                            <div class="col-8">
+                                <input type="text" class="form-control form" id="direccion" placeholder="Introduzca su dirección:" name="direccion" >
+                            </div>
+                        </div>
+                        <div class="from-group row oculto" id="nomUsuario">
+                            <label for="nomUsuario" class="col-4">Nombre de usuario:</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control form" id="nomUsuario" placeholder="Introduzca su nombre de usuario" name="nomUsuario" >
+                            </div>
+                        </div>
+                        <div class="form-group row oculto" id="contraseña" style="margin-top: 10px;">
+                            <label for="contraseña" class="col-4">Contraseña: </label>
+                            <div class="col-8">
+                                <input type="password" class="form-control form" id="contraseña" placeholder="Introduzca su contraseña" name="contraseña" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col">
+                                <button name="btnAceptar" id="btnAceptar" type="submit" class="btn btn-info w-25 mx-auto mt-5">Enviar</button>
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/objetos.js"></script>
+        <script type="text/javascript" src="js/principalIndex.js"></script>
+    </body>
+</html>
